@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correct way to access element using getElementById with a variable
+    var elementId = "myDiv";
+    var element = document.getElementById(elementId);
+    element.innerHTML = "This text replaces the previous one.";
+
+    //Corrected Missing Semicolon issue
+    console.log("This is a log statement");
+  </script>
+</body>
+</html>
